@@ -1,0 +1,19 @@
+.item{
+    padding:1rem;
+    display:flex;
+    align-items: center; /*가운데정렬*/
+    cursor: pointer;
+}
+.checked{
+    text-decoration-line: line-through;
+    color:#adb5bd;
+}
+.remove{
+    margin-right: 1rem;
+    color:red;
+}
+
+.check-mark{
+    font-size: 1.5rem;
+    color:#3bc9db;
+}
