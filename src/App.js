@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 //import './App.css';
-import {initFirebase} from "./Shared/Firebase";
-import TodoItem from "./Components/TodoItem";
-import Pallete from "./Components/Pallete";
-import TodoInput from "./Components/TodoInput";
-import './Css/Template.css';
-import TodoList from "./Components/TodoList";
+import {initFirebase} from "./shared/Firebase";
+import Pallete from "./components/Pallete";
+import TodoInput from "./components/TodoInput";
+import './css/Template.css';
+import TodoList from "./components/TodoList";
 
 class App extends  Component{
   constructor() {
@@ -21,9 +20,15 @@ class App extends  Component{
             <div className="title">
               Todo-List
             </div>
-            <Pallete/>
-            <TodoInput/>
-            <TodoList/>
+            <section className="pallete-wrapper">
+              <Pallete/>
+            </section>
+            <section className="form-wrapper">
+              <TodoInput/>
+            </section>
+            <section className="todos-wrapper">
+              <TodoList/>
+            </section>
           </main>
         </div>
     );
